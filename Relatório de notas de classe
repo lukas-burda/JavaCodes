@@ -6,14 +6,14 @@ public class desafio_aula_6 {
 
 	public static void main(String[] args) {
 		
-		//Um professor deseja lançar as notas da sua turma de Desenvolvimento de Software.
-			//Para tanto, você deve utilizar um vetor para os nomes e outro para as notas.
-		//O professor deve informar quantos alunos há na turma.
-		//O seu programa deve receber o nome e a respectiva nota de cada aluno
-		//Ao final, imprima um relatório de notas (nome e nota)
-		//A média da turma
-		//A maior nota, seguida do nome do aluno com essa nota
-		//A menor nota, seguida do nome do aluno com essa nota
+		/* Um professor deseja lançar as notas da sua turma de Desenvolvimento de Software.
+		Para tanto, você deve utilizar um vetor para os nomes e outro para as notas.
+		O professor deve informar quantos alunos há na turma.
+		O seu programa deve receber o nome e a respectiva nota de cada aluno
+		Ao final, imprima um relatório de notas (nome e nota)
+		A média da turma
+		A maior nota, seguida do nome do aluno com essa nota
+		A menor nota, seguida do nome do aluno com essa nota */
 
 
 		Scanner teco = new Scanner(System.in);
