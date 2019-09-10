@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class desafio_pontos_pertencentes_a_H {
 
 	public static void main(String[] args) {
-		//Os pontos (x,y) que pertencem à figura H (abaixo) são tais que     x > 0   e   x2 + y2 < 1. 
-		//Dados n pontos reais (x,y), verifique se cada ponto pertence ou não a H.
+		//Os pontos (x,y) que pertencem Ã  figura H (abaixo) sÃ£o tais que     x > 0   e   x2 + y2 < 1. 
+		//Dados n pontos reais (x,y), verifique se cada ponto pertence ou nÃ£o a H.
 
 				
 				Scanner teclado = new Scanner(System.in);
 				float x;
 				float y;
 				
-				System.out.println("Insira um número: ");
+				System.out.println("Insira um nÃºmero: ");
 				x = teclado.nextFloat();
 				
 				teclado = null;
 				teclado = new Scanner(System.in);
 				
-				System.out.println("Insira um número: ");
+				System.out.println("Insira um nÃºmero: ");
 				y = teclado.nextFloat();
 				
 				float res = ((x*x)+(y*y));
@@ -29,7 +29,7 @@ public class desafio_pontos_pertencentes_a_H {
 				}
 				
 				else {
-					System.out.println("Não pertencem a H!");
+					System.out.println("NÃ£o pertencem a H!");
 				}
 
 	}
