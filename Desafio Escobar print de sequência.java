@@ -14,12 +14,12 @@ public class desafio_2 {
 			resp =+ i/j;
 			i++;
 			j*=3;
-		System.out.println("esse é o i: "+ i);
-		System.out.println("esse é o j: "+ j);
+		System.out.println("esse Ã© o i: "+ i);
+		System.out.println("esse Ã© o j: "+ j);
 		}
-		System.out.println("A soma de 14 elementos da seq. é: " +resp);
-		//resp = i/j;
-		//System.out.println(resp);
+		System.out.println("A soma de 14 elementos da seq. Ã©: " +resp);
+		/*resp = i/j;
+		System.out.println(resp); */
 	}
 
 }
