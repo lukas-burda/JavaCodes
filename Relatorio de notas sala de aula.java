@@ -6,12 +6,12 @@ public class desafio_aula_6 {
 
 	public static void main(String[] args) {
 		
-		//Um professor deseja lançar as notas da sua turma de Desenvolvimento de Software.
-			//Para tanto, você deve utilizar um vetor para os nomes e outro para as notas.
-		//O professor deve informar quantos alunos há na turma.
+		//Um professor deseja lanÃ§ar as notas da sua turma de Desenvolvimento de Software.
+			//Para tanto, vocÃª deve utilizar um vetor para os nomes e outro para as notas.
+		//O professor deve informar quantos alunos hÃ¡ na turma.
 		//O seu programa deve receber o nome e a respectiva nota de cada aluno
-		//Ao final, imprima um relatório de notas (nome e nota)
-		//A média da turma
+		//Ao final, imprima um relatÃ³rio de notas (nome e nota)
+		//A mÃ©dia da turma
 		//A maior nota, seguida do nome do aluno com essa nota
 		//A menor nota, seguida do nome do aluno com essa nota
 
@@ -27,11 +27,11 @@ public class desafio_aula_6 {
 
 		
 			for(int i=0; i<notas.length; i++) {
-				System.out.print("Insira o "+(i+1)+"º nome: ");
+				System.out.print("Insira o "+(i+1)+"Âº nome: ");
 				Scanner fortec = new Scanner(System.in);
 				nomes[i] = fortec.nextLine();
 				
-				System.out.print("Insira a "+(i+1)+"º nota: ");
+				System.out.print("Insira a "+(i+1)+"Âº nota: ");
 				Scanner forteco = new Scanner(System.in);
 				notas[i] = forteco.nextFloat();
 				media+=notas[i];
@@ -48,7 +48,7 @@ public class desafio_aula_6 {
 				System.out.println(nomes[i]+",\t"+notas[i]);
 			}
 				double total=media/notas.length;
-				System.out.println("\nA média da sala é: " +total+"\nA maior nota foi "+maior+"\nA menor nota foi "+menor);
+				System.out.println("\nA mÃ©dia da sala Ã©: " +total+"\nA maior nota foi "+maior+"\nA menor nota foi "+menor);
 
 	}
 
