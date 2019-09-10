@@ -10,6 +10,25 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+/* o .csv Ã©:
+1,151
+2,165
+3,118
+4,164
+5,281
+6,36
+7,39
+6,127
+4,265
+1,214
+3,198
+6,275
+4,260
+1,215
+3,27
+4,201
+*/
+
 public class atv_avaliativa_1918704 {
 
 	public static void main(String[] args) {
@@ -39,8 +58,8 @@ public class atv_avaliativa_1918704 {
 			}		
 			
 		for(Entry<String, Integer> filiaisEntry : listaValores.entrySet()) {
-			gravador.write("Filial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator());
-			System.out.println(("FIlial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator()));;
+			gravador.write("Filial nÂ° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator());
+			System.out.println(("FIlial nÂ° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator()));;
 		}
 		
 		arquivoCsv.close();
@@ -50,7 +69,7 @@ public class atv_avaliativa_1918704 {
 		gravador.close(); 
 	}
 		catch (FileNotFoundException e) {
-			System.out.println(e.getMessage()+ "\n Por favor, verifique se o nome do arquivo está correto.\n Ou se ele existe na pasta.");
+			System.out.println(e.getMessage()+ "\n Por favor, verifique se o nome do arquivo estÃ¡ correto.\n Ou se ele existe na pasta.");
 			e.printStackTrace();
 		}
 		catch (IOException e) {
