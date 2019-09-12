@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
@@ -26,25 +25,20 @@ import java.util.Map.Entry;
 4,260
 1,215
 3,27
-4,201
-*/
+4,201 */
 
 public class atv_avaliativa_1918704 {
-
 	public static void main(String[] args) {
 		String caminhoArqCsv = "C:\\Users\\Lord\\Desktop\\Faculdade\\movimento.csv";
-		String caminhoArqTxt = "C:\\Users\\Lord\\Desktop\\Faculdade\\Saldos_filiais.txt";
-			
+		String caminhoArqTxt = "C:\\Users\\Lord\\Desktop\\Faculdade\\Saldos_filiais.txt";		
 		try {
 			FileReader arquivoCsv = new FileReader(caminhoArqCsv);
 			BufferedReader leitorCsv = new BufferedReader(arquivoCsv);
 			FileWriter arqSaldos = new FileWriter(caminhoArqTxt, true);
-			PrintWriter gravador = new PrintWriter(arqSaldos);
-			
+			PrintWriter gravador = new PrintWriter(arqSaldos);	
 			String[] s;
 			String linha = ",";
-			HashMap<String, Integer> listaValores = new HashMap<String, Integer>();
-			
+			HashMap<String, Integer> listaValores = new HashMap<String, Integer>();	
 			linha = leitorCsv.readLine();
 			while(linha != null) {
 				s = linha.split(",");
@@ -55,13 +49,11 @@ public class atv_avaliativa_1918704 {
 						listaValores.put(s[0],(listaValores.get(s[0])+ Integer.parseInt(s[1])));
 					}
 				linha = leitorCsv.readLine();
-			}		
-			
+			}			
 		for(Entry<String, Integer> filiaisEntry : listaValores.entrySet()) {
 			gravador.write("Filial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator());
 			System.out.println(("FIlial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator()));;
 		}
-		
 		arquivoCsv.close();
 		leitorCsv.close();
 		arqSaldos.flush(); 
@@ -76,7 +68,5 @@ public class atv_avaliativa_1918704 {
 			e.printStackTrace();
 		} finally {
 		}
-
 	}
-
 }
