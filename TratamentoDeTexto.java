@@ -59,7 +59,7 @@ public class resenhasF {
 					total+=1;
 					if(!stop_list.contains(palavra)) {
 						totalStop +=1;
-						
+	
 						if(qualidades_list.contains(palavra)) {
 							totQualidades += 1;	
 						}
@@ -85,7 +85,6 @@ public class resenhasF {
 			System.out.println("O total de palavras em geral: "+ total);
 			System.out.println("Quantidade de adjetivos positivos: " + totQualidades);
 			System.out.println("Quantidade de adjetivos negativos: " + totDefeitos);
-		
 		stop_reader.close();
 		corpus_reader.close();
 		}	
