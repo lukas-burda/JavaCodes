@@ -81,7 +81,7 @@ public class resenhasF {
 					System.out.println(entrada.getKey() + " = " + entrada.getValue());
 				}
 			}
-			System.out.println("O total de palavras (com stopwords): "+totalStop);
+			System.out.println("O total de palavras (contando stopwords): "+totalStop);
 			System.out.println("O total de palavras em geral: "+ total);
 			System.out.println("Quantidade de adjetivos positivos: " + totQualidades);
 			System.out.println("Quantidade de adjetivos negativos: " + totDefeitos);
