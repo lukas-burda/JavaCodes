@@ -42,24 +42,24 @@ public class atv_avaliativa_1918704 {
 			linha = leitorCsv.readLine();
 			while(linha != null) {
 				s = linha.split(",");
-					if(listaValores.get(s[0]) == null ) {
-						listaValores.put(s[0], Integer.parseInt(s[1]));
-					}
-					else {
-						listaValores.put(s[0],(listaValores.get(s[0])+ Integer.parseInt(s[1])));
-					}
+				if(listaValores.get(s[0]) == null ) {
+					listaValores.put(s[0], Integer.parseInt(s[1]));
+				}
+				else {
+					listaValores.put(s[0],(listaValores.get(s[0])+ Integer.parseInt(s[1])));
+				}
 				linha = leitorCsv.readLine();
 			}			
-		for(Entry<String, Integer> filiaisEntry : listaValores.entrySet()) {
-			gravador.write("Filial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator());
-			System.out.println(("FIlial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator()));;
+			for(Entry<String, Integer> filiaisEntry : listaValores.entrySet()) {
+				gravador.write("Filial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator());
+				System.out.println(("FIlial n° " + filiaisEntry.getKey() + "\t Soma do caixa: " + filiaisEntry.getValue() + System.lineSeparator()));;
+			}
+			arquivoCsv.close();
+			leitorCsv.close();
+			arqSaldos.flush(); 
+			arqSaldos.close();
+			gravador.close(); 
 		}
-		arquivoCsv.close();
-		leitorCsv.close();
-		arqSaldos.flush(); 
-		arqSaldos.close();
-		gravador.close(); 
-	}
 		catch (FileNotFoundException e) {
 			System.out.println(e.getMessage()+ "\n Por favor, verifique se o nome do arquivo está correto.\n Ou se ele existe na pasta.");
 			e.printStackTrace();
