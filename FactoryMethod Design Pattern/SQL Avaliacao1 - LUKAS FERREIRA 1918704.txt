@@ -1,0 +1,9 @@
+create database maquinavendas;
+use maquinavendas;
+
+create table transacao (
+ cpf varchar(11) not null,
+ data_transacao varchar(30),
+ forma_pagamento varchar(20),
+ valor numeric(12,2)
+ );
